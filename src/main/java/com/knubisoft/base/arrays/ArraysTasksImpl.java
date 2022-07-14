@@ -1,54 +1,30 @@
 package com.knubisoft.base.arrays;
 
-public class ArraysTasksImpl implements ArraysTasks {
+import java.util.Scanner;
 
-    @Override
-    public int[] reverse(int[] array) {
-        return null;
-    }
+public class ArraysTasksImpl {
+	
+//Заполнение массива заданным количеством элементов
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int arraySize= scanner.nextInt();
+		int array[] = new int[arraySize];
+		
+		for(int i=0; i<arraySize; i++) {
+			array[i]=scanner.nextInt();
+		}
+		
+		for(int i1 = array.length-1; i1 >= 0; i1--) {
+		System.out.println(array[i1]);
+		}
 
-    @Override
-    public int[] mergeArrays(int[] array1, int[] array2) {
-        return null;
-    }
-
-    @Override
-    public int[] findMax3InArray(int[] array) {
-        return null;
-    }
-
-    @Override
-    public int findLongestIncreasingContinuesSubsequence(int[] array) {
-        return -1;
-    }
-
-    @Override
-    public int sumOfAllUniqueElements(int[] array) {
-        return -1;
-    }
-
-    @Override
-    public int[] moveZeroes(int[] array) {
-        return null;
-    }
-
-    @Override
-    public int findFinalValue(int[] nums, int original) {
-        return -1;
-    }
-
-    @Override
-    public String longestCommonPrefix(String[] words) {
-        return null;
-    }
-
-    @Override
-    public int missingNumber(int[] array) {
-        return -1;
-    }
-
-    @Override
-    public boolean containsDuplicate(int[] array) {
-        return false;
-    }
+	}
 }
+	
+	
+	
+
+
+
+ 
